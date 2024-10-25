@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,18 @@ Partial Class Form2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtConfirmPassword = New System.Windows.Forms.TextBox()
+        Me.txtFullname = New System.Windows.Forms.TextBox()
+        Me.rbStudent = New System.Windows.Forms.RadioButton()
+        Me.rbCounselor = New System.Windows.Forms.RadioButton()
+        Me.rbDirector = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'Label2
@@ -46,75 +47,89 @@ Partial Class Form2
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Sign Up"
         '
-        'TextBox1
+        'txtUsername
         '
-        Me.TextBox1.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox1.Location = New System.Drawing.Point(52, 124)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox1.TabIndex = 6
-        Me.TextBox1.Text = "Username"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.ForeColor = System.Drawing.Color.LightGray
-        Me.Label1.Location = New System.Drawing.Point(3, 282)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(132, 13)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Already have an account?"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.SteelBlue
-        Me.Button1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button1.Location = New System.Drawing.Point(141, 277)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(55, 23)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.txtUsername.ForeColor = System.Drawing.Color.DimGray
+        Me.txtUsername.Location = New System.Drawing.Point(133, 85)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(121, 20)
+        Me.txtUsername.TabIndex = 6
+        Me.txtUsername.Text = "Username"
         '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.SteelBlue
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Button2.Location = New System.Drawing.Point(28, 237)
+        Me.Button2.Location = New System.Drawing.Point(42, 188)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(168, 24)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Create Account"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox2.Location = New System.Drawing.Point(52, 162)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox2.TabIndex = 11
-        Me.TextBox2.Text = "Password"
+        Me.txtPassword.ForeColor = System.Drawing.Color.DimGray
+        Me.txtPassword.Location = New System.Drawing.Point(6, 111)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(121, 20)
+        Me.txtPassword.TabIndex = 11
+        Me.txtPassword.Text = "Password"
         '
-        'TextBox3
+        'txtConfirmPassword
         '
-        Me.TextBox3.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox3.Location = New System.Drawing.Point(52, 198)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(123, 20)
-        Me.TextBox3.TabIndex = 12
-        Me.TextBox3.Text = "Confirm Password"
+        Me.txtConfirmPassword.ForeColor = System.Drawing.Color.DimGray
+        Me.txtConfirmPassword.Location = New System.Drawing.Point(133, 111)
+        Me.txtConfirmPassword.Name = "txtConfirmPassword"
+        Me.txtConfirmPassword.Size = New System.Drawing.Size(123, 20)
+        Me.txtConfirmPassword.TabIndex = 12
+        Me.txtConfirmPassword.Text = "Confirm Password"
         '
-        'TextBox4
+        'txtFullname
         '
-        Me.TextBox4.ForeColor = System.Drawing.Color.DimGray
-        Me.TextBox4.Location = New System.Drawing.Point(52, 85)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(121, 20)
-        Me.TextBox4.TabIndex = 15
-        Me.TextBox4.Text = "Name"
+        Me.txtFullname.ForeColor = System.Drawing.Color.DimGray
+        Me.txtFullname.Location = New System.Drawing.Point(6, 85)
+        Me.txtFullname.Name = "txtFullname"
+        Me.txtFullname.Size = New System.Drawing.Size(121, 20)
+        Me.txtFullname.TabIndex = 15
+        Me.txtFullname.Text = "Full Name"
+        '
+        'rbStudent
+        '
+        Me.rbStudent.AutoSize = True
+        Me.rbStudent.BackColor = System.Drawing.Color.Transparent
+        Me.rbStudent.Location = New System.Drawing.Point(70, 142)
+        Me.rbStudent.Name = "rbStudent"
+        Me.rbStudent.Size = New System.Drawing.Size(62, 17)
+        Me.rbStudent.TabIndex = 16
+        Me.rbStudent.TabStop = True
+        Me.rbStudent.Text = "Student"
+        Me.rbStudent.UseVisualStyleBackColor = False
+        '
+        'rbCounselor
+        '
+        Me.rbCounselor.AutoSize = True
+        Me.rbCounselor.BackColor = System.Drawing.Color.Transparent
+        Me.rbCounselor.Location = New System.Drawing.Point(138, 142)
+        Me.rbCounselor.Name = "rbCounselor"
+        Me.rbCounselor.Size = New System.Drawing.Size(72, 17)
+        Me.rbCounselor.TabIndex = 17
+        Me.rbCounselor.TabStop = True
+        Me.rbCounselor.Text = "Counselor"
+        Me.rbCounselor.UseVisualStyleBackColor = False
+        '
+        'rbDirector
+        '
+        Me.rbDirector.AutoSize = True
+        Me.rbDirector.BackColor = System.Drawing.Color.Transparent
+        Me.rbDirector.Location = New System.Drawing.Point(100, 165)
+        Me.rbDirector.Name = "rbDirector"
+        Me.rbDirector.Size = New System.Drawing.Size(62, 17)
+        Me.rbDirector.TabIndex = 18
+        Me.rbDirector.TabStop = True
+        Me.rbDirector.Text = "Director"
+        Me.rbDirector.UseVisualStyleBackColor = False
         '
         'Form2
         '
@@ -124,14 +139,15 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(222, 327)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.ClientSize = New System.Drawing.Size(257, 255)
+        Me.Controls.Add(Me.rbDirector)
+        Me.Controls.Add(Me.rbCounselor)
+        Me.Controls.Add(Me.rbStudent)
+        Me.Controls.Add(Me.txtFullname)
+        Me.Controls.Add(Me.txtConfirmPassword)
+        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.Label2)
         Me.Name = "Form2"
         Me.Text = "Signup "
@@ -141,11 +157,12 @@ Partial Class Form2
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents txtUsername As TextBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtConfirmPassword As TextBox
+    Friend WithEvents txtFullname As TextBox
+    Friend WithEvents rbStudent As RadioButton
+    Friend WithEvents rbCounselor As RadioButton
+    Friend WithEvents rbDirector As RadioButton
 End Class
